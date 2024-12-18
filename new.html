@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with AOS</title>
+    <!-- Include AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for animations */
+        [data-aos="thp-scale-in"] {
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 1.5s ease, opacity 1.5s ease;
+        }
+
+        [data-aos="thp-scale-in"].aos-animate {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        [data-aos="thp-fade-right"] {
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: transform 1.6s ease, opacity 1.6s ease;
+        }
+
+        [data-aos="thp-fade-right"].aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        [data-aos="thp-fade-left"] {
+            transform: translateX(50%);
+            opacity: 0;
+            transition: transform 2s ease, opacity 2s ease;
+        }
+
+        [data-aos="thp-fade-left"].aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        [data-aos="fade-down"] {
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: transform 1s ease, opacity 1s ease;
+        }
+
+        [data-aos="fade-down"].aos-animate {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .thp-intro__decor {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .thp-intro-content {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Scale-in animation -->
+        <div data-aos="thp-scale-in" data-aos-delay="200" data-aos-duration="1500" class="thp-intro__decor">
+            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-main-bg.png" alt="Card and Dice">
+        </div>
+
+        <!-- Fade-right animation -->
+        <div data-aos="thp-fade-right" data-aos-delay="1600" data-aos-duration="1600" class="thp-intro__decor">
+            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card.png" alt="Card">
+        </div>
+
+        <!-- Fade-left animation -->
+        <div data-aos="thp-fade-left" data-aos-delay="1600" data-aos-duration="2000" class="thp-intro__decor">
+            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-1.png" alt="Chips">
+        </div>
+
+        <!-- Fade-down animation -->
+        <div data-aos="fade-down" data-aos-delay="1200" data-aos-duration="500" class="thp-intro-content">
+            <h1>Welcome to the Animation</h1>
+        </div>
+    </div>
+
+    <!-- Include AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 1500, // Animation duration
+                once: true,     // Animation triggers only once
+                offset: 100,    // Start animation when element is 100px into viewport
+            });
+        });
+    </script>
+</body>
+</html>

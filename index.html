@@ -3,7 +3,7 @@
 <head>
     <title>Site</title>
     <!-- AOS CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 
 
@@ -5761,17 +5761,17 @@
             z-index: -1
         }
     </style>
-    <link href="https://v3.traincdn.com/sys-ui/2.2.285/Desktop/Default/client.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://v3.traincdn.com/sys-ui/2.2.285/Desktop/Default/client.css" rel="stylesheet" type="text/css">
     <link data-n-head="1" rel="icon" type="image/x-icon"
         href="/genfiles/cms/1-285/desktop/media_asset/1da51baa342984a84ca1ac8dd900998b.png">
     <link data-n-head="1" rel="preconnect" href="https://radar.cedexis.com">
     <link data-n-head="1" rel="preconnect" href="https://www.googletagmanager.com">
-    <link data-n-head="1" rel="preconnect" href="https://www.google-analytics.com">
-    <link data-n-head="1" rel="preconnect" href="https://fonts.gstatic.com">
-    <link data-n-head="1" rel="preconnect" href="https://suphelper.com">
+    <link data-n-head="1" rel="preconnect" href="https://www.google-analytics.com"> -->
+    <!-- <link data-n-head="1" rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link data-n-head="1" rel="preconnect" href="https://suphelper.com"> -->
     <link data-n-head="1" rel="stylesheet"
         href="/1xlite-488389.top/genfiles/site-admin/colors/d152f372e0240ff0dc437963f02d05a3.css">
-    <meta data-n-head="1" charset="utf-8">
+    <!-- <meta data-n-head="1" charset="utf-8">
     <meta data-n-head="1" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta data-n-head="1" data-hid="description" name="description" content="Site">
     <meta data-n-head="1" data-hid="og:description" name="og:description" content="Site">
@@ -5779,10 +5779,10 @@
     <script type="text/javascript" async=""
         src="https://www.googletagmanager.com/gtag/js?id=UA-131019888-1&amp;l=dataLayer&amp;cx=c&amp;gtm=45je4cc1v893859730za200"></script>
     <script data-n-head="1" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7V60YW2S5H"></script>
-    <meta data-n-head="1" name="googlebot" content="noindex, indexifembedded">
-    <script charset="utf-8" src="/1xlite-488389.top/static-promotion/desktop/default/a8e593ad.modern.js"></script>
+    <meta data-n-head="1" name="googlebot" content="noindex, indexifembedded"> -->
+    <!-- <script charset="utf-8" src="/1xlite-488389.top/static-promotion/desktop/default/a8e593ad.modern.js"></script>
     <script charset="utf-8" src="/1xlite-488389.top/static-promotion/desktop/default/3db7314d.modern.js"></script>
-    <script charset="utf-8" src="/1xlite-488389.top/static-promotion/desktop/default/1f8bd055.modern.js"></script>
+    <script charset="utf-8" src="/1xlite-488389.top/static-promotion/desktop/default/1f8bd055.modern.js"></script> -->
     <style type="text/css">
         [dir] [data-aos][data-aos][data-aos-duration="50"],
         [dir] body[data-aos-duration="50"] [data-aos] {
@@ -8888,41 +8888,60 @@
             text-decoration: none
         }
 
-        /* Custom Scale-In Animation */
-[data-aos='thp-scale-in'] {
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 1.5s ease, opacity 1.5s ease;
-}
+        [dir] [data-aos='thp-scale-in'][data-v-17af1874] {
+            transform: scale(0);
+            transition-property: transform
+        }
 
-[data-aos='thp-scale-in'].aos-animate {
-    transform: scale(1);
-    opacity: 1;
-}
+        [dir] [data-aos='thp-scale-in'].aos-animate[data-v-17af1874] {
+            transform: scale(1)
+        }
 
-/* Custom Fade-Right Animation */
-[data-aos='thp-fade-right'] {
-    opacity: 0;
-    transform: translateX(50%);
-    transition: transform 1.5s ease, opacity 1.5s ease;
-}
+        [dir="ltr"] [data-aos='thp-fade-right'][data-v-17af1874] {
+            transition-property: right, top, transform, opacity
+        }
 
-[data-aos='thp-fade-right'].aos-animate {
-    opacity: 1;
-    transform: translateX(0);
-}
+        [dir="rtl"] [data-aos='thp-fade-right'][data-v-17af1874] {
+            transition-property: left, top, transform, opacity
+        }
 
-/* Custom Fade-Left Animation */
-[data-aos='thp-fade-left'] {
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: transform 1.5s ease, opacity 1.5s ease;
-}
+        [data-aos='thp-fade-right'][data-v-17af1874]:not(.aos-animate) {
+            top: 50%;
+            opacity: 0
+        }
 
-[data-aos='thp-fade-left'].aos-animate {
-    opacity: 1;
-    transform: translateX(0);
-}
+        [dir="ltr"] [data-aos='thp-fade-right'][data-v-17af1874]:not(.aos-animate) {
+            right: 50%;
+            transform: translate(50%, -50%)
+        }
+
+        [dir="rtl"] [data-aos='thp-fade-right'][data-v-17af1874]:not(.aos-animate) {
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        [dir="ltr"] [data-aos='thp-fade-left'][data-v-17af1874] {
+            transition-property: left, top, transform, opacity
+        }
+
+        [dir="rtl"] [data-aos='thp-fade-left'][data-v-17af1874] {
+            transition-property: right, top, transform, opacity
+        }
+
+        [data-aos='thp-fade-left'][data-v-17af1874]:not(.aos-animate) {
+            top: 50%;
+            opacity: 0
+        }
+
+        [dir="ltr"] [data-aos='thp-fade-left'][data-v-17af1874]:not(.aos-animate) {
+            left: 50%;
+            transform: translate(50%, -50%)
+        }
+
+        [dir="rtl"] [data-aos='thp-fade-left'][data-v-17af1874]:not(.aos-animate) {
+            right: 50%;
+            transform: translate(-50%, -50%)
+        }
 
     </style>
     <style type="text/css">
@@ -11295,115 +11314,6 @@
 
 <body class="webp">
     <div id="__promo_nuxt"><!---->
-        <style>
-            #initial-promo-preloader {
-              --bar-thickness: 0.5em;
-              --bar-height-max: 2em;
-              --bar-height-mid: 1em;
-              --bar-margin: 0.25em;
-              --bar-border-radius: 0.25em;
-              position: absolute;
-              background-color: var(--bg, #1d4369);
-              color: var(--clr, #fff);
-              left: 0;
-              top: 0;
-              min-height: var(--bar-height-max);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 100%;
-              height: 100%;
-            }
-            @keyframes initial-promo-preloader-bar {
-              0% {
-                height: var(--bar-thickness);
-                opacity: 0.5;
-              }
-              15% {
-                height: var(--bar-height-mid);
-                opacity: 1;
-                transform: translateY(0);
-              }
-              30% {
-                height: var(--bar-height-mid);
-              }
-              45% {
-                height: var(--bar-thickness);
-                opacity: 1;
-                transform: translateY(calc(var(--bar-height-mid) * -1));
-              }
-              60% {
-                opacity: 0.5;
-              }
-              75% {
-                transform: translateY(0);
-              }
-              100% {
-                height: var(--bar-thickness);
-                opacity: 0.5;
-              }
-            }
-            @keyframes initial-promo-preloader-bar-2 {
-              0% {
-                height: var(--bar-thickness);
-                opacity: 0.5;
-              }
-              15% {
-                height: var(--bar-height-max);
-                opacity: 1;
-                transform: translateY(0);
-              }
-              30% {
-                height: var(--bar-height-max);
-              }
-              45% {
-                height: var(--bar-thickness);
-                opacity: 1;
-                transform: translateY(calc(var(--bar-height-mid) * -1));
-              }
-              60% {
-                opacity: 0.5;
-              }
-              75% {
-                transform: translateY(0);
-              }
-              100% {
-                height: var(--bar-thickness);
-                opacity: 0.5;
-              }
-            }
-            #initial-promo-preloader > .preloader__bar {
-              width: var(--bar-thickness);
-              height: var(--bar-thickness);
-            }
-            #initial-promo-preloader > .preloader__bar {
-              margin-right: var(--bar-margin);
-              margin-left: var(--bar-margin);
-              border-radius: var(--bar-border-radius);
-              background-color: currentColor;
-              animation: initial-promo-preloader-bar 1.5s linear infinite;
-            }
-            #initial-promo-preloader > .preloader__bar:nth-child(2n) {
-              animation-name: initial-promo-preloader-bar-2;
-            }
-            #initial-promo-preloader > .preloader__bar:nth-child(2) {
-              animation-delay: 0.2s;
-            }
-            #initial-promo-preloader > .preloader__bar:nth-child(3) {
-              animation-delay: 0.3s;
-            }
-            #initial-promo-preloader > .preloader__bar:nth-child(4) {
-              animation-delay: 0.4s;
-            }
-            #initial-promo-preloader > .preloader__bar:nth-child(5) {
-              animation-delay: 0.5s;
-            }
-          </style>
-          <div id="initial-promo-preloader">
-            <span class="preloader__bar"></span><span class="preloader__bar"></span
-            ><span class="preloader__bar"></span><span class="preloader__bar"></span
-            ><span class="preloader__bar"></span>
-          </div>
         <div id="__layout">
             <div class="page-layout">
                 <div data-v-09590746="" id="overlay-container" class="overlay-container">
@@ -11753,11 +11663,6 @@
                                     </span>
                                 </button>
                             </div>
-
-
-
-
-
 
                             <div data-v-742deaf1="" class="thp-rules__picture thp-rules-picture">
                                 <picture data-v-742deaf1="">
