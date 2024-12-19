@@ -12323,16 +12323,7 @@
     </div>
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
-            AOS.init({
-                duration: 1500, // Animation duration
-                once: true,     // Animation triggers only once
-                offset: 100     // Distance to start animation
-            });
-        });
-
-    </script>
+    
     <script src="/1xlite-488389.top/static-promotion/desktop/46d2e1bc.modern.js" type="module"></script>
     <script src="/1xlite-488389.top/static-promotion/desktop/f9d56de3.modern.js" type="module"></script>
     <script src="/1xlite-488389.top/static-promotion/desktop/0d5c2c35.modern.js" type="module"></script>
@@ -12413,6 +12404,23 @@
             modal.style.display = 'none';
         }
     });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // AOS Initialization
+            AOS.init({
+                duration: 1500, // Animation duration
+                once: true,     // Trigger animation only once
+                offset: 100     // Distance to trigger animation
+            });
+
+            // Ensure the page starts at the top on reload
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual'; // Disable scroll restoration
+            }
+            window.scrollTo(0, 0); // Explicitly reset the scroll position
+        });
     </script>
 
 </body>
