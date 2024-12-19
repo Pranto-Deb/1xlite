@@ -3,110 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation with AOS</title>
-    <!-- Include AOS CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <title>Animation Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        /* Custom CSS for animations */
-        [data-aos="thp-scale-in"] {
-            transform: scale(0);
-            opacity: 0;
-            transition: transform 1.5s ease, opacity 1.5s ease;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-
-        [data-aos="thp-scale-in"].aos-animate {
-            transform: scale(1);
-            opacity: 1;
+        .thp-intro {
+            padding: 50px;
+            background-color: #f9f9f9;
         }
-
-        [data-aos="thp-fade-right"] {
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: transform 1.6s ease, opacity 1.6s ease;
-        }
-
-        [data-aos="thp-fade-right"].aos-animate {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        [data-aos="thp-fade-left"] {
-            transform: translateX(50%);
-            opacity: 0;
-            transition: transform 2s ease, opacity 2s ease;
-        }
-
-        [data-aos="thp-fade-left"].aos-animate {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        [data-aos="fade-down"] {
-            transform: translateY(-50%);
-            opacity: 0;
-            transition: transform 1s ease, opacity 1s ease;
-        }
-
-        [data-aos="fade-down"].aos-animate {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .thp-intro__decor {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         .thp-intro-content {
             text-align: center;
-            font-family: Arial, sans-serif;
-            margin-bottom: 40px;
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
+        .thp-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <!-- Main container -->
-    <div class="container">
-        <!-- Scale-in animation -->
-        <div data-aos="thp-scale-in" data-aos-delay="200" data-aos-duration="1500" class="thp-intro__decor">
-            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-main-bg.png" alt="Card and Dice">
+    <section data-v-17af1874="" data-v-5f581367="" class="thp-intro">
+        <div data-v-17af1874="" class="thp-intro__container thp-intro-container">
+            <picture data-v-17af1874="" data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1500"
+                class="thp-intro__decor thp-intro-decor thp-intro__decor--card-bg">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-main-bg.webp" type="image/webp">
+                <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-main-bg.png" alt="card and dice" class="thp-intro-decor__img thp-intro-decor__img--card-bg">
+            </picture>
+            <picture data-v-17af1874="" data-aos-delay="1600" data-aos="fade-right" data-aos-duration="1600"
+                class="thp-intro__decor thp-intro-decor thp-intro__decor--card">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card.webp, https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card-2x.webp 2x" type="image/webp">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card-2x.png 2x">
+                <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card.png" alt="card" class="thp-intro-decor__img thp-intro-decor__img--card">
+            </picture>
+            <picture data-v-17af1874="" data-aos-delay="1600" data-aos="fade-left" data-aos-duration="2000"
+                class="thp-intro__decor thp-intro-decor thp-intro__decor--chips-1">
+                <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-1.png" alt="chips" class="thp-intro-decor__img thp-intro-decor__img--chips-1">
+            </picture>
+            <picture data-v-17af1874="" data-aos-delay="1600" data-aos="fade-left" data-aos-duration="2000"
+                class="thp-intro__decor thp-intro-decor thp-intro__decor--chips-2">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-2.webp, https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-2-2x.webp 2x" type="image/webp">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-2-2x.png 2x">
+                <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-2.png" alt="chips" class="thp-intro-decor__img thp-intro-decor__img--chips-2">
+            </picture>
+            <picture data-v-17af1874="" data-aos-delay="1600" data-aos="fade-right" data-aos-duration="2000"
+                class="thp-intro__decor thp-intro-decor thp-intro__decor--dice">
+                <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-dice-2x.png 2x">
+                <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-dice.png" alt="dice" class="thp-intro-decor__img thp-intro-decor__img--dice">
+            </picture>
+            <div data-v-17af1874="" class="thp-intro__content thp-intro-content">
+                <h1 data-v-17af1874="" class="thp-intro-content-logo thp-intro-content__logo">
+                    <div data-v-17af1874="" data-aos-delay="1200" data-aos="fade-down" data-aos-duration="500">
+                        <span data-v-17af1874="" class="thp-intro-content-logo__text thp-intro-content-logo-text">
+                            <span data-v-17af1874="" data-info="জয়" class="thp-intro-content-logo-text__value">জয়</span>
+                        </span>
+                    </div>
+                    <picture data-v-17af1874="" data-aos-delay="100" data-aos="zoom-in" data-aos-duration="1500">
+                        <source data-v-17af1874="" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/200.webp 1x, https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/200-2x.webp 2x" type="image/webp">
+                        <img data-v-17af1874="" src="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/200.png" srcset="/v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/200-2x.png 2x" alt="200%">
+                    </picture>
+                </h1>
+                <div data-v-17af1874="" data-aos-delay="1400" data-aos="fade-down" data-aos-duration="1000">
+                    <h6 data-v-17af1874="" class="thp-intro-content__subtitle thp-intro-content-subtitle">
+                        <p data-v-17af1874="" class="thp-intro-content-subtitle__text">
+                            <b data-v-17af1874="" class="thp-intro-content-subtitle__bold">1xGames</b> খেলুন<br>
+                            <span data-v-17af1874="" class="thp-intro-content-subtitle__offset">এবং </span>
+                            <b data-v-17af1874="" class="thp-intro-content-subtitle__bold">আপনার জয়ের x2 নিন!</b>
+                        </p>
+                    </h6>
+                </div>
+                <div data-v-17af1874="" data-aos-delay="1600" data-aos="fade-down" data-aos-duration="1000" class="thp-intro-content__footer thp-intro-content-footer">
+                    <button data-v-7cf0345a="" data-v-17af1874="" type="button" class="thp-button thp-intro-content-footer__btn thp-button--size-m thp-button--theme-primary thp-button--blinking thp-button--is-arrow">
+                        <span data-v-7cf0345a="" class="thp-button__blinking"></span>
+                        <span data-v-7cf0345a="" class="thp-button__caption">এখনই খেলুন</span>
+                    </button>
+                    <button data-v-17af1874="" type="button" id="open-modal-btn" class="thp-intro-content-footer-rules">
+                        <span data-v-17af1874="" class="thp-intro-content-footer-rules__text">শর্তাবলী</span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <!-- Fade-right animation -->
-        <div data-aos="thp-fade-right" data-aos-delay="1600" data-aos-duration="1600" class="thp-intro__decor">
-            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-card.png" alt="Card">
-        </div>
-
-        <!-- Fade-left animation -->
-        <div data-aos="thp-fade-left" data-aos-delay="1600" data-aos-duration="2000" class="thp-intro__decor">
-            <img src="https://v3.traincdn.com/genfiles/cms/1/desktop/promotions/two-hundred-percent/intro-chips-1.png" alt="Chips">
-        </div>
-
-        <!-- Fade-down animation -->
-        <div data-aos="fade-down" data-aos-delay="1200" data-aos-duration="500" class="thp-intro-content">
-            <h1>Welcome to the Animation</h1>
-        </div>
-    </div>
-
-    <!-- Include AOS JS -->
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener("DOMContentLoaded", function () {
             AOS.init({
-                duration: 1500, // Animation duration
-                once: true,     // Animation triggers only once
-                offset: 100,    // Start animation when element is 100px into viewport
+                duration: 1500,
+                once: true,
+                offset: 100
             });
         });
     </script>
